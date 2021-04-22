@@ -3,7 +3,7 @@ CNV-KOF: a new approach to detect copy number variations from next-generation se
 
 ## Installation
 The following software must be installed on your machine:
-Python : tested with version 3.6
+Python : tested with version 3.7
 R: tested with version 3.5
 
 ### Python dependencies
@@ -27,20 +27,21 @@ To install this package, start R and enter:
 
 
 ## Running
-CNV-LOF requires two input files, a bam file and a reference folder,
-the folder contains the reference sequence for each chromosome of the bam file。
+CNV-KOF requires two input files, a bam file and a reference folder,
+the folder contains the reference sequence for each chromosome of the bam file.
 
 ### runnig command
-python CNV-LOF.py [bamfile] [reference] [output] [binSize] [segCount] [k]
+python CNV-KOF.py [bamfile] [reference] [output] [binSize] [segCount] [k] [h]
 
 ·bamfile: a bam file
 ·reference: the reference folder path
 ·output:the the output file path
 ·binSize: the window size ('1000'by default)
 ·segCount: the number of  partitions to CBS ('50' by default)·
-·K:the parameters of the LOF ('10' by default)
+·k: the k-distance parameter of the KOF ('10' by default)
+·h: the bandwidth parameter of the KOF ('O.2' by default)
 
 ### run the default example
-python CNV-LOF.py test.bam /Users/jong/oc_svm/reference /Users/jong/oc_svm/result 1000 50 10 
+python CNV-KOF.py test.bam /Users/jong/oc_svm/reference /Users/jong/oc_svm/result 1000 50 10 0.2
 
 Finally, two result files will be generated, one is the mutation information of detection and the other is the statistical data
