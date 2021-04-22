@@ -42,6 +42,6 @@ python CNV-KOF.py [bamfile] [reference] [output] [binSize] [segCount] [k] [h]
 ·h: the bandwidth parameter of the KOF ('O.2' by default)
 
 ### run the default example
-python CNV-KOF.py test.bam /Users/jong/oc_svm/reference /Users/jong/oc_svm/result 1000 50 10 0.2
+python CNV-KOF.py test.bam reference result 1000 50 10 0.2
 
 Finally, two result files will be generated, one is the mutation information of detection and the other is the statistical data
