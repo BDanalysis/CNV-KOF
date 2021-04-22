@@ -39,7 +39,7 @@ python CNV-KOF.py [bamfile] [reference] [output] [binSize] [segCount] [k] [h]
 ·binSize: the window size ('1000'by default)
 ·segCount: the number of  partitions to CBS ('50' by default)·
 ·k: the k-distance parameter of the KOF ('10' by default)
-·h: the bandwidth parameter of the KOF ('O.2' by default)
+·h: the bandwidth parameter of the KOF ('0.2' by default)
 
 ### run the default example
 python CNV-KOF.py test.bam reference result 1000 50 10 0.2
