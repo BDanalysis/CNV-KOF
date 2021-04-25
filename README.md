@@ -28,7 +28,7 @@ To install this package, start R and enter:
 
 ## Running
 CNV-KOF requires two input files, a bam file and a reference folder,
-the folder contains the reference sequence for each chromosome of the bam file.
+the reference folder contains the reference sequence for each chromosome of the bam file.
 
 ### runnig command
 python CNV-KOF.py [bamfile] [reference] [output] [binSize] [segCount] [k] [h]
